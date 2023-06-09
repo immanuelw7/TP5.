@@ -19,7 +19,7 @@ class MyGame(arcade.Window):
 
     def __init__(self, width, height, title):
         super().__init__(width, height, title)
-        arcade.set_background_color(arcade.color.BLACK)
+        arcade.set_background_color(arcade.color.AERO_BLUE)
         self.game_state = GameState.NOT_STARTED
         self.point_botssss = 0
         self.points_joueurs = 0
