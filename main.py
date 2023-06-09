@@ -100,11 +100,11 @@ class MyGame(arcade.Window):
         """
 
         if self.player_win:
-            arcade.draw_text("Partie gagnée!", 280, 530, arcade.color.RED, 30)
+            arcade.draw_text("Partie winnnn!", 280, 530, arcade.color.RED, 30)
         elif self.player_lose:
-            arcade.draw_text("Partie perdue!", 280, 530, arcade.color.RED, 30)
+            arcade.draw_text("Partie lostttt!", 280, 530, arcade.color.RED, 30)
         elif self.nul_game:
-            arcade.draw_text("Partie nulle!", 300, 530, arcade.color.RED, 30)
+            arcade.draw_text("Partie nuleee!", 300, 530, arcade.color.RED, 30)
 
     def on_draw(self):
         """
