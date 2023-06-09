@@ -13,17 +13,17 @@ class AttackAnimation(arcade.Sprite):
     ATTACK_SCALE = 0.50
     ANIMATION_SPEED = 5.0
 
-    def __init__(self, attack_type):
+    def __init__(self, atack_type):
         super().__init__()
         self.an_update_time = 1.0 / AttackAnimation.ANIMATION_SPEED
         self.time_since_last_swap = 0.0
-        self.atack_typ = attack_type
-        if self.atack_typ == AttaqueType.ROCK:
+        self.atack_type = atack_type
+        if self.atack_type == AttaqueType.ROCK:
             self.texture = [
                 arcade.load_texture("assets/srock.png"),
                 arcade.load_texture("assets/srock-attack.png"),
             ]
-        elif self.atack_typ == AttaqueType.PAPER:
+        elif self.atack_type == AttaqueType.PAPER:
             self.texture = [
                 arcade.load_texture("assets/spaper.png"),
                 arcade.load_texture("assets/spaper-attack.png"),
